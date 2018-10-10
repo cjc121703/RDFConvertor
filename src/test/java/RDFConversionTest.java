@@ -8,7 +8,7 @@ public class RDFConversionTest {
 
     @Test
     public void testConversion(){
-        String data = getFile("shapesui.ttl");
+        String data = getFile("person.ttl");
         RDFConversion rdfConversion = new RDFConversion();
         String results = rdfConversion.convert(data, "TTL", "JSON-LD");
         System.out.print(results);
